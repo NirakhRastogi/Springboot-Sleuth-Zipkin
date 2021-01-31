@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: Checkout-Service
+  jpa:
+    hibernate:
+      ddl-auto: 'create'
+  zipkin:
+    base-url: http://localhost:9411/
+
+database-config:
+  username: postgres
+  password: postgres
+  database-name: postgres
+  port: 5433
+  dns: localhost
+
+kafka:
+  bootstrap-server: localhost:9092
+  topic-name: orders

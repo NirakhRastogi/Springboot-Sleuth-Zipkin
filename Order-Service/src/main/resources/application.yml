@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: Order-Service
+  jpa:
+    hibernate:
+      ddl-auto: 'create'
+  zipkin:
+    base-url: http://localhost:9411/
+
+kafka:
+  bootstrap-server: localhost:9092
+  topic-name: orders
+
+endpoints:
+  checkout-service: http://localhost:8080/order
